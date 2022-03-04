@@ -23,7 +23,7 @@ while chances < 3:
             cashDeposit = input()
             print('Deposit ' , cashDeposit , '. Confirm?')
             prompt = input()
-            if prompt == 'y':
+            if prompt == 'y' or 'Y':
                 newBalance = float(balance) + float(cashDeposit)
                 print('Your new balance is ' , newBalance)
         elif menu == '4':
@@ -31,7 +31,7 @@ while chances < 3:
             cashWithdraw = input()
             print('Withdraw' , cashWithdraw , '?')
             prompt = input()
-            if prompt == 'y':
+            if prompt == 'y' or 'Y':
                 if float(balance) < float(cashWithdraw):
                     print('Insufficient balance.')
                 else:
