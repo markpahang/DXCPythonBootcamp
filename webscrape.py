@@ -13,7 +13,7 @@ containers = page_soup.findAll("div", {"class":"item-container"})
 file_name = "C:\product.csv"
 f = open(file_name, "w")
 
-headers = "brand , shipping , price \n"
+headers = "Brand , Shipping , Price \n"
 f.write(headers)
 
 for container in containers:
